@@ -160,6 +160,15 @@ img {
 .conditions-list .conditions-item + .conditions-item {
   margin-left: 30px;
 }
+.conditions-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -193,7 +202,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.about-header {
+.header-sections {
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.16;
@@ -216,15 +225,6 @@ img {
 }
 .team {
   background-color: #f5f4fa;
-}
-.team-header {
-  font-weight: var(--font-weight-bold);
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 .team-list {
   display: flex;
@@ -264,6 +264,39 @@ img {
   margin-top: 10px;
   color: var(--text-color);
 }
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--first-backlight-color);
+  border-radius: 50%;
+  display: block;
+}
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+.sections-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
 .footer-logo {
   display: inline-block;
   font-family: Raleway;
@@ -301,6 +334,9 @@ img {
   padding-bottom: 60px;
   color: var(--text-white-color);
 }
+.footer-container {
+  display: flex;
+}
 .footer-link:hover,
 .footer-link:focus {
   color: var(--second-backlight-color);
@@ -315,6 +351,34 @@ img {
 }
 .footer-address {
   display: inline-block;
+  color: var(--text-white-color);
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-link {
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--first-backlight-color);
+  border-radius: 50%;
+  display: block;
+  margin-top: 20px;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-header-social {
+  font-weight: var(--font-weight-bold);
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 12px;
+
   color: var(--text-white-color);
 }
 /* portfolio */
